@@ -1,6 +1,6 @@
 import UIKit
 
-var greeting = "Hello, playground"
+var greeting = "Selection Sort"
 
 var collection = [8, 12, 25, 69, 90, 23, 10, 45, 56, 67]
 
@@ -10,8 +10,8 @@ func sort(_ array: [Int]) -> [Int] {
     
     for _ in tempArray.indices {
         let maxndex = findMax(tempArray)
-        
-        newArray.append(tempArray.remove(at: maxndex))
+        let max = tempArray.remove(at: maxndex)
+        newArray.append(max)
     }
 
     return newArray
