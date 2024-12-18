@@ -5,9 +5,6 @@ var greeting = "Hello, playground"
 class Stack<Element: Equatable> {
     private(set) var container = [Element]()
     
-    init(container: [Element]) {
-        self.container = container
-    }
     
     func isEmpty() -> Bool {
         container.count == 0
@@ -43,7 +40,7 @@ class Stack<Element: Equatable> {
     }
 }
 
-var stack = Stack(container: ["shshs", "ksjdbv", "n s", "ashdv "])
+var stack = Stack<Int>()
 
 var array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
