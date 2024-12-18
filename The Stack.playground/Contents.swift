@@ -9,11 +9,11 @@ class Stack<Element: Equatable> {
         self.container = container
     }
     
-    func isEmpty() {
+    func isEmpty() -> Bool {
         container.count == 0
     }
     
-    func isNotEmpty() {
+    func isNotEmpty() -> Bool {
         container.count != 0
     }
     
@@ -22,20 +22,28 @@ class Stack<Element: Equatable> {
     }
     
     func pop() {
-        container.remove(at: 0)
+        if isEmpty() {
+            print("Stack is empty")
+        } else {
+            container.remove(at: 0)
+        }
     }
     
     func remove(_ element: Element) {
         guard let index = container.firstIndex(of: element) else { return }
         container.remove(at: index)
     }
+    
+    func peek()  {
+        guard let last = container.last else {
+            print("Stack is empty")
+            return
+        }
+        print(last)
+    }
 }
 
 var stack = Stack(container: ["shshs", "ksjdbv", "n s", "ashdv "])
-print(stack.container)
-stack.push("bskd")
-print(stack.container)
-stack.pop()
-print(stack.container)
-stack.remove("n s")
-print(stack.container)
+
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
