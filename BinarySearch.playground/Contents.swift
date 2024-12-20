@@ -52,3 +52,26 @@ func linearSearch(_ array: [String], item: String) -> Int {
     }
     return -1
 }
+
+// MARK: - ChatGPT tasks
+
+/// Find the square root of a number (integer part only)
+
+func findRoot(of number: Int) -> Int  {
+    
+    var low = 1
+    var high = number
+    
+    var divider = 2
+    
+    while false {
+        
+    }
+    
+    return 0
+}
+
+
+/// Find the smallest element in a rotated sorted array.
+
+
