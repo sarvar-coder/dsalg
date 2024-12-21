@@ -3,12 +3,17 @@ import UIKit
 var greeting = "Hello, playground"
 
 func bubbleSort(array: inout [Int]) -> [Int] {
+    let count = array.count
     
-    for i in 0...(array.count - 1) {
-        for j in 0...((array.count - 1) - i) {
+    guard count > 1 else { return array } // If array has 0 or 1 element, it's already sorted.
+    
+    for i in 0..<count {
+        /// The last `i` elements are already sorted, so exclude them in the current pass.
+        
+        for j in 0..<(count - i - 1) {
             if array[j] > array[j + 1] {
-                array[j] = array[j]
-                array[j + 1] = array[j + 1]
+                ///Swap elements if they are in the wrong order
+                array.swapAt(j, j + 1)
             }
         }
     }
