@@ -71,4 +71,4 @@ func makeQueue(_ dict: [String: [String]]) -> [String] {
 search(
     contacts: graph,
     startNode: "siz",
-    target: "elon musk")
+    target: "elon musk")  //   "true" output: "elon muskni topdik"
