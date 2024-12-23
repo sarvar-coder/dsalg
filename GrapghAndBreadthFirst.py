@@ -14,7 +14,6 @@ def search(startNode, target = 'elon musk'):
                # print(searched)
                return True
             else:
-                 print(f'{target} royhatda yoq')
                  searchQueue += graph[person]
                  searched.add(person)
     return False            
