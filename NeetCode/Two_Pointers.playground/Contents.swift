@@ -15,7 +15,7 @@ func reverseString(_ s: inout [Character]) {
 }
 // MARK: - isPalindrome
 func isPalindrome(_ s: String) -> Bool {
-    let s = converting(s)
+    let s: [Character] = Array(s)
     
     var left = 0
     var right = s.count - 1
@@ -31,15 +31,39 @@ func isPalindrome(_ s: String) -> Bool {
     return true
 }
 
-func converting(_ s: String) -> [Character] {
+// MARK: - validPalindrome
+
+func validPalindrome(_ s: String) -> Bool {
+    let s: [Character] = Array(s)
+    var left = 0
+    var right = s.count - 1
     
-    var temp = [Character]()
-    
-    for char in s.lowercased() {
-        if  String(char).rangeOfCharacter(from: CharacterSet.alphanumerics.inverted) != nil  {
-            temp.append(char)
+    while left <= right {
+        if s[left] != s[right] {
+          if isPalindrome(s, left + 1, right) || isPalindrome(s, left, right - 1) {
+            return false
+          }
+            
         }
+        left += 1
+        right -= 1
     }
-    return temp
+    
+    return true
+   }
+
+func isPalindrome(_ s: [Character], _ left:  Int, _ right:  Int) -> Bool {
+    
+    var left = left
+    var right = right
+    
+    while left < right {
+        if s[left] != s[right] {
+            return false
+        }
+        left += 1
+        right -= 1
+    }
+    
+    return true
 }
-1
