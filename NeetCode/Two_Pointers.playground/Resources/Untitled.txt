@@ -1,0 +1,12 @@
+Valid palindrome 2
+
+if reversed word is equal the true word then return true.
+But there is some requirement.
+If we remove at most one character, still is equal, then we return true.
+
+Check to neglect the both sides of character. Character at left and right index if it does not overflow lowerbound and upperbound respectively.
+
+My mistake is that trying to cover all cases.
+It should be simpler.
+
+
