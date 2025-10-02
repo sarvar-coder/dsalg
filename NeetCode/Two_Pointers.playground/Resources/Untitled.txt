@@ -10,3 +10,15 @@ My mistake is that trying to cover all cases.
 It should be simpler.
 
 
+MergeAlternately:
+
+You are given two strings word1 and word2.
+Merge the strings by adding letters in alternating order, starting with word1.
+If a string is longer than the other, append the additional letters onto the end of the merged string.
+
+2 ta soz beriladi va shulardan yang soz yaratish kerak. Yangi soz 1 - sozdan 1 ta harf olinib keyin 2- dan
+ham bitta harf olinib qoshiladi va shu tartibda davom etadi. Biri ikkinchisidan harfi kop bolsa yangi
+sozni orqasiga qolgan harflarni qoshib qoyamiz.
+
+Compelexity: O(n)
+Space: O(n)
