@@ -22,3 +22,9 @@ sozni orqasiga qolgan harflarni qoshib qoyamiz.
 
 Compelexity: O(n)
 Space: O(n)
+
+
+Merge sorted array
+2 ta nums degan array lar beriladi va m va n ozgaruvchilar ham mos ravishda 2 ta arraydagi elementlar
+sonini korsatadi. Bizning vazifa shu 2 ta arrayni osib borish tartida qoshish kerak.
+
