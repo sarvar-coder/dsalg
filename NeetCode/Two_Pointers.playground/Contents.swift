@@ -1,6 +1,7 @@
 import UIKit
 
 var greeting = "Hello, playground"
+var array = [1, 2, 3, 4, 5]
 
 // MARK: - reverseString
 func reverseString(_ s: inout [Character]) {
@@ -75,7 +76,7 @@ func mergeAlternately(_ word1: String, _ word2: String) -> String {
     
     var left = 0
     var right = word1.count > word2.count ? word2.count - 1 : word1.count - 1
-
+    
     var ans = ""
     
     while left <= right {
@@ -102,19 +103,35 @@ func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
     while j >= 0 {
         if i >= 0 && nums1[i] > nums2[j] {
             nums1[last] = nums1[i]
-             i -= 1
+            i -= 1
         } else {
             nums1[last] = nums2[j]
             j -= 1
         }
         last -= 1
     }
-
+    
     
 }
-var one = [-1,0,0,3,3,3,0,0,0]
-let two = [1,2,3]
 
-merge(&one, 6, two, 3)
-print(one)
+func removeDuplicates(_ nums: inout [Int]) -> Int {
+    
+    var newNums = [nums[0]]
+    var i = 0
+    var index = 0
+    
+    while index < nums.count {
+        
+        if newNums[i] != nums[index] {
+            newNums.append(nums[index])
+            i += 1
+        }
+        
+        index += 1
+    }
+    
+    nums = newNums
+    return newNums.count
+}
+
 

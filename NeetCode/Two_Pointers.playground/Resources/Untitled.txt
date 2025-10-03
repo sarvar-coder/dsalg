@@ -20,7 +20,7 @@ If a string is longer than the other, append the additional letters onto the end
 ham bitta harf olinib qoshiladi va shu tartibda davom etadi. Biri ikkinchisidan harfi kop bolsa yangi
 sozni orqasiga qolgan harflarni qoshib qoyamiz.
 
-Compelexity: O(n)
+Time: O(n)
 Space: O(n)
 
 
@@ -28,3 +28,12 @@ Merge sorted array
 2 ta nums degan array lar beriladi va m va n ozgaruvchilar ham mos ravishda 2 ta arraydagi elementlar
 sonini korsatadi. Bizning vazifa shu 2 ta arrayni osib borish tartida qoshish kerak.
 
+Remove Duplicate from sorted array.
+Osish tartibida saralangan array berilgan. nusxalarni joyida ochiring elementlar faqat bir marta korinsin.
+Demak array dagi elementlar nusxalarini ochirish.
+1 - yechim.
+Set ishlatish hamma elementlarni yagona qilib qoyadi.
+2 - yechim.
+Two pointers with exra space
+Time: O(n)
+Space: O(n)
