@@ -7,3 +7,9 @@ array da bitta element bolib k ham undan katta bolgan song teng bolsachi
 yoki shu sonni oziga teng bolsachi.
 yoki k arraydagi sonlar miqdoridan katta bolsachi. 
 
+Container with most water: 
+n olchamdagi array berilgan . 
+n ta vertikal chiziqlar bor, i th  line are (i, 0) and (i, height[i])
+n berilgan arrayning miqdoriga teng 
+2 <= n <= 100,000
+

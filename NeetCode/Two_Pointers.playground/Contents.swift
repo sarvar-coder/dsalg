@@ -192,8 +192,31 @@ func rotate(_ nums: inout [Int], _ k: Int) {
         k -= 1
     }
 }
-var oneSet = Set<String>(["Qir", "Karvak", "Ovshar"])
-var twoSet = Set<String>(["Bozor", "Karvak", "Ovshar"])
-print(oneSet.subtracting(twoSet))
-print(twoSet.subtracting(oneSet))
 
+func maxArea(height: [Int]) -> Int {
+   
+    var maxSum = 0
+    var sum = 0
+    var n = height.count
+    var left = 0
+    var right = n - 1
+    
+    while left <= right {
+        if height[left] > height[right] {
+            
+            sum = (height[left] - (height[left] - height[right])) * (right - 1)
+            maxSum = max(maxSum, sum)
+            
+            right -= 1
+        } else {
+            sum = (height[right] - (height[right] - height[left])) * left
+            maxSum = max(maxSum, sum)
+            left += 1
+        }
+    }
+    return maxSum
+}
+
+maxArea(height: [1,8,6,2,5,4,8,3,7])
+maxArea(height: [1, 1])
+maxArea(height: [2, 5, 3, 1, 7, 5, 1,9, 4, 3, 5, ])
