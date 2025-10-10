@@ -37,3 +37,10 @@ Set ishlatish hamma elementlarni yagona qilib qoyadi.
 Two pointers with exra space
 Time: O(n)
 Space: O(n)
+
+3sum
+berilgan array dan 3 ta raqamni qoshganda 0 ga teng boladigan 3 ta son qaytarish kerak. indexlari
+bir biriga teng bolmagan.
+element lar ket =ma ketlikda qoshilishi kerakmi? - tartibni farqi yoq
+
+
