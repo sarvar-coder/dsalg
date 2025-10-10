@@ -6,9 +6,13 @@
 //
 
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int maxArea(vector<int>& height);
+
+int main() {
+    vector<int> array = { 1,8,6,2,5,4,8,3,7 };
+    int result = maxArea(array);
+    
+    cout << result << endl;
 }
