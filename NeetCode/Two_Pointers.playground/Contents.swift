@@ -31,9 +31,7 @@ func isPalindrome(_ s: String) -> Bool {
     
     return true
 }
-
 // MARK: - validPalindrome
-
 func validPalindrome(_ s: String) -> Bool {
     let s: [Character] = Array(s)
     var left = 0
@@ -52,7 +50,6 @@ func validPalindrome(_ s: String) -> Bool {
     
     return true
 }
-
 func isPalindrome(_ s: [Character], _ left:  Int, _ right:  Int) -> Bool {
     
     var left = left
@@ -68,7 +65,6 @@ func isPalindrome(_ s: [Character], _ left:  Int, _ right:  Int) -> Bool {
     
     return true
 }
-
 // MARK: - mergeAlternately
 func mergeAlternately(_ word1: String, _ word2: String) -> String {
     let word1: [Character] = Array(word1)
@@ -94,7 +90,7 @@ func mergeAlternately(_ word1: String, _ word2: String) -> String {
     
     return ans
 }
-
+// MARK: - Merge sorted array.
 func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
     
     var last = m + n - 1
@@ -113,7 +109,7 @@ func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
     
     
 }
-
+//MARK: - removeDuplicates
 func removeDuplicates(_ nums: inout [Int]) -> Int {
     
     var newNums = [nums[0]]
@@ -133,5 +129,71 @@ func removeDuplicates(_ nums: inout [Int]) -> Int {
     nums = newNums
     return newNums.count
 }
+// MARK: - Two sum
 
+// MARK: - Three sum
+func threeSum(_ nums: [Int]) -> [[Int]] {
+    let sortedNums = nums.sorted()
+    var i = 0
+    var ans = Set<[Int]>()
+    
+    while i < sortedNums.count - 2 {  // here
+        
+        //         here
+        if i > 0 && sortedNums[i] == sortedNums[i-1] {
+            i += 1
+            continue
+        }
+        
+        var j = i + 1 // here
+        var k = sortedNums.count - 1
+        
+        
+        while j < k {
+            let sum = sortedNums[i] + sortedNums[j] + sortedNums[k]
+            
+            if sum == 0 {
+                ans.insert([sortedNums[i], sortedNums[j], sortedNums[k]])
+                j += 1
+                k -= 1
+                
+                // here
+                while j < k && sortedNums[j] == sortedNums[j-1] {
+                    j += 1
+                }
+                while j < k && sortedNums[k] == sortedNums[k+1] {
+                    k -= 1
+                }
+            } else if sum > 0 {
+                k -= 1
+            } else {
+                j += 1
+            }
+        }
+        
+        i += 1
+    }
+    
+    return  Array(ans)
+}
+
+func rotate(_ nums: inout [Int], _ k: Int) {
+    if nums.count == 1 || k == 0 || k == nums.count {
+        return
+    }
+    var k = k
+    
+    if k > nums.count { k -= nums.count }
+    
+    while k != 0 {
+        
+        nums.insert(nums.remove(at: nums.count - 1), at: 0)
+        
+        k -= 1
+    }
+}
+var oneSet = Set<String>(["Qir", "Karvak", "Ovshar"])
+var twoSet = Set<String>(["Bozor", "Karvak", "Ovshar"])
+print(oneSet.subtracting(twoSet))
+print(twoSet.subtracting(oneSet))
 
