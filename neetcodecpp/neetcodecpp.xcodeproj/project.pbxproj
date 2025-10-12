@@ -12,6 +12,7 @@
 		5E83ADF52E99860800EF8E34 /* containerWater.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E83ADF42E99860800EF8E34 /* containerWater.cpp */; };
 		5E83ADF72E9A046400EF8E34 /* boatsPeople.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E83ADF62E9A046400EF8E34 /* boatsPeople.cpp */; };
 		5E83ADFD2E9A8B5900EF8E34 /* firstMissingPositive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E83ADFC2E9A8B5900EF8E34 /* firstMissingPositive.cpp */; };
+		5E83ADFF2E9B59F100EF8E34 /* subArrayEqualasK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E83ADFE2E9B59F100EF8E34 /* subArrayEqualasK.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		5E83ADF62E9A046400EF8E34 /* boatsPeople.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = boatsPeople.cpp; sourceTree = "<group>"; };
 		5E83ADF82E9A04B600EF8E34 /* functions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = functions.hpp; sourceTree = "<group>"; };
 		5E83ADFC2E9A8B5900EF8E34 /* firstMissingPositive.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = firstMissingPositive.cpp; sourceTree = "<group>"; };
+		5E83ADFE2E9B59F100EF8E34 /* subArrayEqualasK.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = subArrayEqualasK.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				5E83ADF42E99860800EF8E34 /* containerWater.cpp */,
 				5E83ADDD2E97EB2F00EF8E34 /* Description.md */,
 				5E83ADFC2E9A8B5900EF8E34 /* firstMissingPositive.cpp */,
+				5E83ADFE2E9B59F100EF8E34 /* subArrayEqualasK.cpp */,
 			);
 			path = neetcodecpp;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				5E83ADF72E9A046400EF8E34 /* boatsPeople.cpp in Sources */,
 				5E83ADFD2E9A8B5900EF8E34 /* firstMissingPositive.cpp in Sources */,
 				5E83ADDA2E97EB0C00EF8E34 /* main.cpp in Sources */,
+				5E83ADFF2E9B59F100EF8E34 /* subArrayEqualasK.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
