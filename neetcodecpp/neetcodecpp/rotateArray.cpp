@@ -10,14 +10,30 @@ using namespace std;
 
 void rotate(vector<int>& nums, int k) {
     if (k == 0 || nums.size() == 1 || nums.size() == k) { return;}
+    vector<int> newNums;
+    newNums.reserve(nums.size());
     
-    if (k > nums.size())  { k -= nums.size(); }
+    int i = 0;
+    int n = int(nums.size()) - 1;
     
-    while (k != 0) {
-        int lastElement = nums.back();
-        nums.pop_back();
-        nums.insert(nums.begin(), lastElement);
-        k--;
+    int ptr1 = k;
+    int ptr2 = k;
+    
+    if (k > nums.size()) {
+        ptr1 = k % nums.size();
+        ptr2 = k % nums.size();
     }
     
+    while (i < n) {
+        if (ptr1 != 0) {
+            newNums.push_back(nums[n - ptr1 + 1]);
+            ptr1--;
+        }
+        
+        if (ptr1 == 0) {
+            newNums.push_back(nums[i - ptr2 + 1]);
+        }
+        i++;
+    }
+    nums = newNums;
 }

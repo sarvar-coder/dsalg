@@ -13,3 +13,17 @@ n ta vertikal chiziqlar bor, i th  line are (i, 0) and (i, height[i])
 n berilgan arrayning miqdoriga teng 
 2 <= n <= 100,000
 
+Boats to save People 
+Array berilgan i chi indexda turgan arrayning elementi i chi odamning hajmi 
+va cheksiz qayiq lar bor , har bir qayiq cheklangan limitdagi odamlarni kotara oladi. 
+
+odamlarni hajmi limit hajmi dan kop bolishi mumkinmi 
+arrayda faqat bitta odam bolsachi 
+ 
+ 2 8 4 6 2 9 4 1 4 2 2; 9
+ 1 2 2 2 2 4 4 4 6 8 9 
+ step 1 
+ 1 + 2 + 2 + 2 + 2 = 9 >>
+ step 2 
+ 4 + 4  + 4 
+1 + 1 + 1 + 1 + 1 + 1

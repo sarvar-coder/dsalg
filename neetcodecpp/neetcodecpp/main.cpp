@@ -7,12 +7,14 @@
 
 #include <iostream>
 using namespace std;
+#include "functions.hpp"
 
-int maxArea(vector<int>& height);
+
 
 int main() {
-    vector<int> array = { 1,8,6,2,5,4,8,3,7 };
-    int result = maxArea(array);
-    
-    cout << result << endl;
+ 
+    double d = 3.14;
+    int i = static_cast<int>(d); // Explicit conversion of double to int
+
+    cout << i << endl;
 }

@@ -181,20 +181,38 @@ func rotate(_ nums: inout [Int], _ k: Int) {
     if nums.count == 1 || k == 0 || k == nums.count {
         return
     }
-    var k = k
     
-    if k > nums.count { k -= nums.count }
+    var newNums = [Int]()
+    newNums.reserveCapacity(nums.count)
+    var i = 0
+    var n = nums.count - 1
     
-    while k != 0 {
-        
-        nums.insert(nums.remove(at: nums.count - 1), at: 0)
-        
-        k -= 1
+    var ptr1 = k // it is used to rotate the array
+    var ptr2 = k // it is used to add left elements in the array
+    
+    if k > nums.count {
+        ptr1 = k % nums.count
+        ptr2 = k % nums.count
     }
+    
+
+    while i < n {
+        if ptr1 != 0 {
+            newNums.append(nums[n - ptr1 + 1])
+            ptr1 -= 1
+        }
+        if ptr1 == 0 {
+            newNums.append(nums[i - ptr2 + 1])
+        }
+        
+        i += 1
+    }
+    
+    nums = newNums
 }
 
 func maxArea(height: [Int]) -> Int {
-   
+    
     var maxSum = 0
     var sum = 0
     var n = height.count
@@ -217,6 +235,7 @@ func maxArea(height: [Int]) -> Int {
     return maxSum
 }
 
-maxArea(height: [1,8,6,2,5,4,8,3,7])
-maxArea(height: [1, 1])
-maxArea(height: [2, 5, 3, 1, 7, 5, 1,9, 4, 3, 5, ])
+
+array = [1, 2]
+rotate(&array, 7)
+print(array)
