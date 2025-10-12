@@ -12,9 +12,10 @@ using namespace std;
 
 
 int main() {
+    
+    vector<int> array = { 1, 2, 3, 4, 5};
  
-    double d = 3.14;
-    int i = static_cast<int>(d); // Explicit conversion of double to int
+    int sth  = subarraySum(array, 5);
 
-    cout << i << endl;
+    cout << sth << endl;
 }
