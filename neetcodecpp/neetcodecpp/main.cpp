@@ -13,9 +13,9 @@ using namespace std;
 
 int main() {
     
-    vector<int> array = { 1, 2, 3, 4, 5};
- 
-    int sth  = subarraySum(array, 5);
-
-    cout << sth << endl;
+//        vector<int> array = {0,0,1,1,1,2,2,3,3,4};
+        vector<int> array = {1, 1, 2, 3, 3};
+//    vector<int> array = {1};
+    int profit = maxProfit(array);
+    cout << profit << endl;
 }

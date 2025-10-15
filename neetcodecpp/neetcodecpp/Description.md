@@ -20,10 +20,14 @@ va cheksiz qayiq lar bor , har bir qayiq cheklangan limitdagi odamlarni kotara o
 odamlarni hajmi limit hajmi dan kop bolishi mumkinmi 
 arrayda faqat bitta odam bolsachi 
  
- 2 8 4 6 2 9 4 1 4 2 2; 9
- 1 2 2 2 2 4 4 4 6 8 9 
- step 1 
- 1 + 2 + 2 + 2 + 2 = 9 >>
- step 2 
- 4 + 4  + 4 
-1 + 1 + 1 + 1 + 1 + 1
+ 
+ Remove duplicate from sorted array. 
+ Berilgan osish tartibda joylashtirilgan arraydan nusxalarni ochirish kerak. 
+ hamma elementlar arrayda bitadan yagona bolishi kerak. 
+ shu amalni bajargandan keyin, miqdorini qaytarish kerak. 
+ 
+ array da bitta element bolsachi? 
+ arrayning elementlari hammasi bir xil bolsachi. 
+ 
+
+

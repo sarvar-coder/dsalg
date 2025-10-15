@@ -14,4 +14,6 @@ int maxArea(vector<int>& height);
 int numRescueBoats(vector<int>& people, int limit);
 int firstMissingPositive(vector<int>& nums);
 int subarraySum(vector<int>& nums, int k);
+int removeDuplicates(vector<int>& nums);
+int maxProfit(vector<int>& prices) ;
 #endif /* functions_hpp */
